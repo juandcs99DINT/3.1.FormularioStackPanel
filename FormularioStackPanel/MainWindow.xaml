@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FormularioStackPanel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Formulario StackPanel" Height="350" Width="735">
+    <StackPanel>
+        <Border Padding="7">
+        <StackPanel>
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FF43A815"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock FontSize="16" FontWeight="Bold" Text="Nombre"></TextBlock>
+            <TextBox></TextBox>
+        </StackPanel>
+        </Border>
         
-    </Grid>
+    </StackPanel>
 </Window>
