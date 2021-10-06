@@ -5,20 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FormularioStackPanel"
         mc:Ignorable="d"
-        Title="Formulario StackPanel" Height="350" Width="735">
-    <StackPanel>
-        <Border Padding="7">
-        <StackPanel>
+        Title="Formulario StackPanel" Height="350" Width="735" MinWidth="400" MaxWidth="900" Icon="assets/128.ico">
+    <StackPanel >
+        <StackPanel Margin="10">
             <StackPanel.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White" Offset="1"/>
                     <GradientStop Color="#FF43A815"/>
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <TextBlock FontSize="16" FontWeight="Bold" Text="Nombre"></TextBlock>
-            <TextBox></TextBox>
+            <TextBlock Margin="7,5,0,0" FontSize="16" FontWeight="Bold" Text="Nombre"></TextBlock>
+            <TextBox Margin="7,5,7,15"></TextBox>
         </StackPanel>
-        </Border>
-        
+
+        <StackPanel Margin="10">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEAEAEA" Offset="0.992"/>
+                    <GradientStop Color="#FF4259EA"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock Margin="7,5,0,0" FontSize="16" FontWeight="Bold" Text="Dirección"></TextBlock>
+            <TextBox  Margin="7,5,7,15"></TextBox>
+        </StackPanel>
+
+        <StackPanel Margin="10">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE22424"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock Margin="7,5,0,0" FontSize="16" FontWeight="Bold" Text="Correo electrónico"></TextBlock>
+            <TextBox Width="600" Margin="7,5,7,15" HorizontalAlignment="Left"></TextBox>
+        </StackPanel>
+
+        <StackPanel Margin="8" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Width="100" Margin="0,0,10,0">Aceptar</Button>
+            <Button MaxHeight="20" Width="100">Cancelar</Button>
+            
+        </StackPanel>
     </StackPanel>
+    
 </Window>
