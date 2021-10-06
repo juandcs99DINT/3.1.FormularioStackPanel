@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:FormularioStackPanel"
         mc:Ignorable="d"
         Title="Formulario StackPanel" Height="350" Width="735" MinWidth="400" MaxWidth="900" Icon="assets/128.ico">
-    <StackPanel >
+    <StackPanel>
         <StackPanel Margin="10">
             <StackPanel.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -43,8 +43,8 @@
         <StackPanel Margin="8" Orientation="Horizontal" HorizontalAlignment="Right">
             <Button Width="100" Margin="0,0,10,0">Aceptar</Button>
             <Button MaxHeight="20" Width="100">Cancelar</Button>
-            
         </StackPanel>
+        
     </StackPanel>
     
 </Window>
